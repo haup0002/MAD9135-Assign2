@@ -1,0 +1,188 @@
+/**
+ * MAD9135 Assignment 2 - Android/Blackberry Assignment: Podcast App
+ * Group 5: Timotius Oktorio (okto0001) & Ryan Haupt (haup0002)
+ */
+
+/***** GENERAL STYLES *****/
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color: #E4E4E4;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+section {
+    display: none;
+    float: left;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+section.active {
+    display: block;
+}
+
+header {
+    background-color: #FFF;
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    height: 49px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+h1 {
+    float: left;
+    font-weight: 500;
+    text-align: center;
+    width: 70%;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 60px;
+    width: 100%;
+}
+
+li {
+    background-color: #FFF;
+    float: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+img {
+    height: inherit;
+    width: inherit;
+}
+
+input {
+    border: 0;
+    display: block;
+    font-size: 12px;
+    margin: 0 10%;
+    padding: 2.5%;
+    position: absolute;
+    top: 70px;
+    width: 75%;
+}
+
+
+/***** BUTTON STYLES *****/
+.buttons {
+    float: left;
+    height: 50px;
+    width: 15%;
+}
+
+#btn_add {
+    background: url("../img/add.svg") no-repeat center center;
+    background-size: 50%;
+}
+
+#btn_back {
+    background: url("../img/left.svg") no-repeat center center;
+    background-size: 50%;
+}
+
+#btn_rewind {
+    background: url("../img/rewind.svg") no-repeat center center;
+}
+
+#btn_play {
+    background: url("../img/play.svg") no-repeat center center;
+    background-size: 70%;
+}
+
+#btn_pause {
+    background: url("../img/pause.svg") no-repeat center center;
+    background-size: 70%;
+}
+
+#btn_forward {
+    background: url("../img/forward.svg") no-repeat center center;
+}
+
+#btn_cancel, #btn_add_2 {
+    color: #0000FF;
+    font-size: 14px;
+    height: auto;
+    margin: 17px 0;
+    text-align: right;
+}
+
+#btn_add_2 {
+    text-align: center;
+}
+
+
+/***** PAGE 1: HOME PAGE *****/
+.podcasts {
+    background: url("../img/right.svg") no-repeat 97% center;
+    background-size: 8%;
+    border-bottom: 1px solid #CCCCCC;
+    display: block;
+    padding: 3% 5%;
+    width: 90%;
+}
+
+
+/***** PAGE 2: PODCAST PAGE *****/
+.imageWrapper {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    height: 238px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.controlWrapper {
+    position: absolute;
+    top: 290px;
+    width: 100%;
+}
+
+.meter {
+    margin: 30px 30px 10px 30px;
+}
+
+.controls {
+    float: left;
+    height: 120px;
+    width: 33.333%;
+}
+
+.controls.inactive {
+    display: none;
+}
+
+
+
