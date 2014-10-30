@@ -47,6 +47,14 @@ var app = {
         for (var c=0; c<numControls; c++) {
             controls[c].addEventListener("click", app.handleControlsClick, false)
         }
+        
+        //Start Ryan Code Thu Oct 30 10:35am
+        //Get Last two "XML" Items from Podcast Site and console log them
+        var oReq = new XMLHttpRequest();
+        oReq.onload = app.reqListener;
+        oReq.open("get", "http://feeds.feedburner.com/ThrillingAdventureHour", true);
+        oReq.send();
+        //End Ryan Code - calls function reqListener
     },
     
     handleLinksClick: function(ev) {
@@ -87,6 +95,19 @@ var app = {
                 console.log("No controls found!");
         }
     },
+    
+    //Start Ryan Code Thu Oct 30 10:35am
+    reqListener: function()
+    {           
+                    //console.log(this.responseText); outputs entire XML doc in console
+                    var xmlDoc = this.responseXML;
+                    console.log(xmlDoc); //output entireXML - minimized
+                    console.log(xmlDoc.documentElement.tagName);//output Top Tag Name
+                    console.log(xmlDoc.getElementsByTagName("item")[0]); //first podcast "Item"
+                    console.log(xmlDoc.getElementsByTagName("item")[1]); //second podcast "Item"
+                
+    },
+    //End Ryan Code - Console logs last 2 Podcast Items
     
     downloadFile: function() {
         var fileTransfer = new FileTransfer();

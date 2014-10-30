@@ -1,2 +1,2 @@
-/Users/kimtimotius/Documents/MAD9135/MAD9135-Assign2/platforms/android/ant-build/AndroidManifest.xml : \
-/Users/kimtimotius/Documents/MAD9135/MAD9135-Assign2/platforms/android/AndroidManifest.xml \
+/Users/ryanhaupt/documents/mad9135-assign2/platforms/android/ant-build/AndroidManifest.xml : \
+/Users/ryanhaupt/documents/mad9135-assign2/platforms/android/AndroidManifest.xml \
